@@ -1,0 +1,58 @@
+/* :active pseudo class property  */
+a:active{
+    color: rgb(2, 171, 25);
+}
+
+/* :checked pseudo class property  */
+input:checked{
+    width: 10px;
+    height: 10px;
+}
+
+/* :disabled pseudo class property shows here  */
+.disabled:disabled{
+    width: 20px;
+    height: 15px;
+}
+
+/* :empty pseudo class property shows here  */
+p:empty{
+    width: 60px;
+    height: 15px;
+    background-color: blue;
+}
+
+/* :enabled pseudo class property shows here  */
+input[type=text]:enabled{
+    background-color: yellowgreen;
+    color: red;
+}
+
+/* :first-child pseudo class property shows here  */
+.div>p:first-child{
+    color: rgb(249, 179, 3);
+    font-size: larger;
+}
+
+/* :focus pseudo class property shows here  */
+.focus>input:focus{
+    background-color: yellow;
+}
+
+/* :hover pseudo class property shows here  */
+#hovr:hover{
+    font-size: x-large;
+    background-color: aqua;
+    color: orange;
+}
+
+/* :invalid pseudo class property shows here  */
+.invld>input:invalid{
+    border: 2px solid red;
+    background-color: cornflowerblue;
+}
+
+/* :valid pseudo class property shows here  */
+.vald>input:valid{
+    background-color: aqua;
+}
