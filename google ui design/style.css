@@ -1,0 +1,128 @@
+body{
+    background-color: rgba(32,33,36,1);
+}
+.main{
+    flex-direction: column;
+    height: 100%;
+}
+div #nav{
+    height: 48px;
+    color: white;
+    background-color: rgba(32,33,36,1);
+}
+div .sidemenu{
+    float: right;
+    /* border: 2px solid red; */
+    height: 48px;
+    display: flex;
+    padding: 0 4px;
+}
+div .sideinfo{
+    padding-left: 15px;
+    display: inline-block;
+    margin: auto;
+}
+div .sideinfo img{
+    width: 30px;
+    height: 30px;
+}
+div .sideinfo a{
+    color: white;
+    text-decoration: none;
+    font-size: small;
+}
+div .sideinfo a:hover{
+    text-decoration: underline;
+}
+
+
+/* mid section after nav starts here  */
+div .midsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    height: 150px;
+    margin: 20px;
+    /* border: 2px solid red; */
+}
+div .midsection img{
+    margin: auto;
+}
+
+/* another midsection1 after midsection  */
+div .midsection2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75px;
+    /* border: 2px solid red; */
+}
+div .inputtag input{
+    width: 37em;
+    height: 2em;
+    border-radius: 50px;
+    background: none;
+    border: 0.5px solid grey;
+    color: white;
+}
+div .inputtag input:hover{
+    background-color: rgb(70, 70, 70);
+    border: none;
+}
+
+/* div buttons section starts here after input tag  */
+
+div .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid palevioletred; */
+    width: 30em;
+    height: 1.7em;
+    margin: 15px;
+}
+
+button{
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    border: none;
+}
+button:hover{
+    border: 0.1px solid grey;
+    cursor: pointer;
+}
+
+/* now here we style our footer section  */
+div .footer{
+    /* border: 2px solid blue; */
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div .lang{
+    /* border: 2px solid white; */
+    width: 37em;
+    height: 2em;
+    margin-top: 15px;
+
+}
+div .lnk{
+    /* border: 1px solid yellow; */
+    width: 32em;
+    height: 1.5em;
+    margin: auto;
+    color: white;
+    font-size: small;
+}
+div .lnk a{
+    color: #8ab4f8;
+    text-decoration: none;
+    font-size: small;
+    padding: 3px;
+}
