@@ -127,6 +127,7 @@ div .lnk a{
     padding: 3px;
 }
 div .lnk a:hover{
+    /* here properties applied  */
     text-decoration: underline;
     color: #8ab4f8;
 }
