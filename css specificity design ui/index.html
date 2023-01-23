@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css specificity design</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="ulist">
+          <ul class="list">
+            <a href="">Features</a>
+            <a href="">Docs</a>
+            <a href="">Testimonials</a>
+            <a href="">Blog</a>
+            <a href="">Pricing</a>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- another header section for headline  -->
+    <header class="headpage">
+      <h1>CSS Specificity Calculator</h1>
+      <p>Supports all of CSS Selectors level 4</p>
+    </header>
+
+    <!-- center section starts here  -->
+    <div class="herosection">
+      <textarea
+        name="selector"
+        type="text"
+        placeholder='Fill in a CSS selector, e.g. "header h1#sitetitle > .logo"'
+        rows="1"
+        style="
+          overflow: hidden;
+          overflow-wrap: break-word;
+          resize: horizontal;
+          width: 650px;
+          height: 30px;
+          text-align: center;
+          font-size: x-large;
+        "
+      ></textarea>
+
+      <div class="linkmenu">
+        Try some: <a href="#">header h1#sitetitle &gt; .logo</a>,&nbsp;&nbsp;
+        <a href="#">ul &gt; li:is(.highlighted, .active)</a>,&nbsp;&nbsp;
+        <a href="#">header:where(#top) nav li:nth-child(2n + 1)</a>
+      </div>
+      <br />
+      <div class="score">
+        <small style="font-size: 15px; font-weight: bolder; color: #0079b1"
+          >SPECIFICITY SCORE</small
+        >
+
+        <span class="values" style="margin: -10px">
+          <span style="color: #107db5">0</span><b style="font-size: 50px">,</b>
+          <span style="color: #10b57d">0</span><b style="font-size: 50px">,</b>
+          <span style="color: #7d10b5">0</span>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
