@@ -1,0 +1,19 @@
+table{
+    margin: auto;
+    margin-top: 50px;
+    border-spacing: 10px;
+}
+table td{
+    border-radius: 3px;
+}
+.td3{
+    background-color: rgb(240, 166, 191);
+}
+.tdlarge{
+    background-color: rgb(240, 166, 191);
+}
+table td{
+    background-color: rgb(196, 193, 193);
+    border: none;
+    padding: 10px;
+}
