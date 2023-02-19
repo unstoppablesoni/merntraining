@@ -1,22 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100vw;
     height: 100vh;
     background: #FFFDCB;
     /* border: 2px solid red; */
     display: flex;
 }
-.maincontainer{
+
+.maincontainer {
     width: 100vw;
     height: 100vh;
     /* background: #FFFDCB; */
     /* border: 2px solid red; */
     display: flex;
 }
+
 .leftside {
     display: flex;
     flex-direction: column;
@@ -26,26 +29,30 @@ body{
     margin: 10px;
     height: 100vh;
     margin: 0px 50px;
-  }
-.leftside .heading{
-   width: 244px; 
-   height: 48px;
-   font-weight: 600;
-   font-size: 36px;
-   margin: 10px;
+}
+
+.leftside .heading {
+    width: 244px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 36px;
+    margin: 10px;
 
 }
-.leftside .description{
+
+.leftside .description {
     width: 300px;
     height: 100px;
     margin: 10px;
     padding-top: 10px;
     font-weight: 300;
 }
-.leftside .list{
+
+.leftside .list {
     line-height: 38px;
 }
-.leftside .hireme{
+
+.leftside .hireme {
     background: #CCC74C;
     font-size: larger;
     color: white;
@@ -57,13 +64,14 @@ body{
     border: none;
     cursor: pointer;
 }
-.leftside .hireme:hover{
+
+.leftside .hireme:hover {
     background-color: #b1ac19;
 }
 
 /* right side container starts here  */
 
-.rightcontainer{
+.rightcontainer {
     display: flex;
     position: relative;
     left: 200px;
@@ -73,7 +81,8 @@ body{
     top: 100px;
     background-color: white;
 }
-.detailsblock{
+
+.detailsblock {
     /* border: 2px solid purple; */
     width: 177px;
     height: 1050px;
@@ -83,27 +92,29 @@ body{
     background: #072A4C;
 
 }
-.downloadbtn{
-    display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: flex-start;
-padding: 10px 24px;
-gap: 10px;
 
-position: absolute;
-width: 224px;
-height: 53px;
-left: 900px;
-top: 33px;
-color: white;
-font-size: large;
-font-weight: 600;
-background: #CCC74C;
-border-radius: 8px;
-border: none;
+.downloadbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 24px;
+    gap: 10px;
+
+    position: absolute;
+    width: 224px;
+    height: 53px;
+    left: 900px;
+    top: 33px;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    background: #CCC74C;
+    border-radius: 8px;
+    border: none;
 }
-.downloadbtn:hover{
+
+.downloadbtn:hover {
     background-color: #b1ac19;
 }
 
@@ -116,12 +127,14 @@ border: none;
     height: 109px;
     /* border: 2px solid green; */
 }
+
 div .imgblock {
     width: 126px;
     height: 106px;
     padding: 3px;
     /* border: 2px solid black; */
 }
+
 .imgblock img {
     bottom: 100px;
     width: 116px;
@@ -129,6 +142,7 @@ div .imgblock {
     border-radius: 50%;
     position: relative;
 }
+
 .block1 {
     position: relative;
     left: 124px;
@@ -139,7 +153,7 @@ div .imgblock {
 
 /* description of resume starts here  */
 
-div .profile{
+div .profile {
     margin-top: 10px;
     /* border: 2px solid rgb(255, 132, 0); */
     width: 545px;
@@ -148,39 +162,42 @@ div .profile{
 
 /* expereince of resume starts here  */
 
-div .expereince{
+div .expereince {
     margin-top: 20px;
     /* border: 2px solid rgb(255, 13, 0); */
     width: 545px;
     height: 265px;
 }
-.spn{
+
+.spn {
     font-size: 10px;
     padding-bottom: 10px;
 }
 
 /* education info starts here  */
 
-div .education{
+div .education {
     margin-top: 20px;
     /* border: 2px solid rgb(255, 13, 0); */
     width: 545px;
     height: 265px;
 }
-.spn{
+
+.spn {
     font-size: 10px;
     padding-bottom: 10px;
 }
 
 /* projects info starts here  */
 
-div .projects{
+div .projects {
     margin-top: 20px;
     /* border: 2px solid rgb(255, 13, 0); */
     width: 545px;
     height: 205px;
 }
-.spn{
+
+.spn {
     font-size: 10px;
     padding-bottom: 10px;
 }
@@ -194,7 +211,8 @@ div .projects{
     height: 112px;
     width: 145px;
 }
-.details .detailh6{
+
+.details .detailh6 {
     color: white;
     margin-left: 15px;
     font-size: 10px;
@@ -215,17 +233,32 @@ div .projects{
 
 @media screen and (max-width: 1400px) {
     body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
     body .rightcontainer .detailsblock {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
-  }
+}
+ .right {
+     display: flex;
+ }
+ 
+
+@media screen and  (max-width: 800px){
+    .maincontainer{
+        flex-direction: column;
+    }
+ .right .skillblock {
+     padding: 2rem;
+ }
+   
+}   
