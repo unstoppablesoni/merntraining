@@ -77,6 +77,7 @@ button{
 button:hover{
     background-color: #0a6ef0;
 }
+/* forgotten link properties  */
 div .forgottenlink{
     display: flex;
     justify-content: center;
