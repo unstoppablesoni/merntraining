@@ -15,3 +15,8 @@ let a = 5;
 let b = 10;
 console.log(!false);
 console.log(!true);
+
+//ternary operator 
+
+let age = 19;
+console.log((age>18) ? "you can vote" : "you cannot vote");
