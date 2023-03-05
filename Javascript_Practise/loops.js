@@ -23,3 +23,24 @@ let obj = {
 for(let p in obj){
     console.log(" marks of " + p + " are " + obj[p])
 }
+
+// while loop
+let a = 0;
+while(a<10){
+    console.log(a);
+    a++;
+}
+console.log("helo");
+// do-while loop
+let abc = 15;
+do{
+    console.log(abc);
+    abc++;
+} while(abc<=10);
+
+//for loop
+
+
+for(let p=0; p<10; p++){
+    console.log(p);
+}
