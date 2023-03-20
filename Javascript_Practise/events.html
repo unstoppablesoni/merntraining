@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events In Javascript</title>
+
+    <script>
+        const myFunction = () =>{
+            alert("hello i am a calling function event example");
+        }
+
+        const pqr = document.getElementById('abcd');
+        pqr.onclick = function(){
+            alert("third way of writting events in js");
+        }
+    </script>
+     
+</head>
+<body>
+    <!-- Inline event that is simple alert box -->
+    <input type="button" value="click me" onclick="alert('I am awesome but no one use me!')">
+    <br><br>
+    <!-- 2. by calling function event happen -->
+    <input type="button" value="calling function" onclick="myFunction()">
+     <!-- 3. by inline events without use of any button and any event -->
+     <br><br>
+     <a href="#" style="text-decoration: none;" id="abcd">
+        <span>Inline Event</span>
+     </a>
+</body>
+</html>
