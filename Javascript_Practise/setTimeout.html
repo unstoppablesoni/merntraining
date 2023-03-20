@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timing events in js</title>
+</head>
+<body>
+    <div>
+        <p id="ShowMyName">Click on the button to see my name!</p>
+        <br>
+        <button id="btn">Click Here</button>
+    </div>
+
+    <script>
+        
+        const MyName = document.querySelector('#ShowMyName');
+        const btn1 = document.querySelector('#btn');
+
+        const HereMyName = () =>{
+            MyName.innerHTML = "Loading..........plz wait!"
+            setTimeout(()=>{
+                MyName.innerHTML="Deepak Soni";
+            },1000)
+        }
+                btn1.addEventListener('click', HereMyName);
+    </script>
+</body>
+</html>
