@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url('hawamahal1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background-color:rgba(125, 120, 120, 0.2);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+nav .logo{
+    width: 25%;
+    text-align: center;
+    animation: beat .25s infinite alternate;
+}
+@keyframes beat{
+	to { transform: scale(1.4); }
+}
+.logo .logoheading{
+    font-size: small;
+    color: #00b894;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+nav .menu{
+    width: 50%;
+    justify-content: space-around;
+    display: flex;
+    font-family: 'Dancing Script', cursive;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+/* main section starts here */
+main{
+    width: 100%;
+    height: 85vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+/* section starts here */
+section h3{
+    font-size: 30px;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 5;
+}
+section h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 30px 0px 20px 0px;
+    text-transform: uppercase;
+    text-shadow: 2px 1px 2px black;
+    letter-spacing: 4;
+}
+section h4{
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    letter-spacing: 4;
+    text-shadow: 2px 1px 5px black;
+}
+section a{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+    font-weight: 400;
+    padding: 5px 30px;
+    border-radius: 15px;
+    margin: 10px;
+    transition: 1s ease;
+}
+section .btn1{
+    background: rgb(247, 170, 226);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section .btn1:hover{
+    background: #a6f7e7;
+    color: black;
+    text-align: center;
+}
+section .btn2{
+    background: #8dc7f7;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section .btn2:hover{
+    background: rgb(245, 173, 173);
+    color: black;
+    text-align: center;
+}
+/* transitions property shows here */
+.change_content::after{
+    content: '';
+    animation: changetext 50s infinite linear;
+    color: #00b894;
+    font-family: cursive;
+    animation-delay: 2s;
+}
+@keyframes changetext{
+    0%{content: "AMER";}
+    10%{content: "JANTAR MANTAR";}
+    20%{content: "ALBERT HALL";}
+    30%{content: "CITY PALACE";}
+    40%{content: "MOTI DUNGRI";}
+    50%{content: "STATUE CIRCLE";}
+    60%{content: "CHOTI CHAUPAD";}
+    70%{content: "WORLD TRADE PARK";}
+    80%{content: "STARDUST";}
+    90%{content: "BIOLOGICAL PARK";}
+    100%{content: "RAMBAGH PALACE";}  
+}
+/* body transition property shows here */
+header{
+    width: 100%;
+    height: 100vh;
+    animation: changebgimg 50s linear 2s infinite;
+}
+@keyframes changebgimg{
+   0%{ background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url('amer.jpg'); background-size: cover; background-repeat: no-repeat;}
+   10%{ background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url('jantarmantar.jpg');background-size: cover; background-repeat: no-repeat;}
+   20%{ background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url('alberthall.jpg');background-size: cover; background-repeat: no-repeat;}
+   30%{ background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url('citypalace.jpg');background-size: cover; background-repeat: no-repeat;}
+   40%{ background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url('motidungri.jpg');background-size: cover; background-repeat: no-repeat;}
+   50%{ background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url('statuecircle.jpg');background-size: cover; background-repeat: no-repeat;}
+   60%{ background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url('chotichaupad.jpg');background-size: cover; background-repeat: no-repeat;}
+   70%{ background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url('wtp.jpg');background-size: cover; background-repeat: no-repeat;}
+   80%{ background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url('stardust.jpg');background-size: cover; background-repeat: no-repeat;}
+   90%{ background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url('biologicalpark.jpg');background-size: cover; background-repeat: no-repeat;}
+   100%{ background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url('rambaghpalace.jpg');background-size: cover; background-repeat: no-repeat;}
+}
