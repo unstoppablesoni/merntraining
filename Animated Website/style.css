@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+/* header section starts here */
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), url('taj1.jpg');
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+/* nav section starts here */
+nav{
+    width: 100%;
+    height: 15vh;
+    background-color:rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+/* logo style here */
+nav .logo{
+    width: 25%;
+    text-align: center;
+    animation: bounce .25s infinite alternate;
+}
+@keyframes bounce{
+	to { transform: scale(1.4); }
+}
+/* menu style here */
+nav .menu{
+    width: 50%;
+    text-align: center;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-around;
+}
+/* home word style applies here */
+a .home{
+    color: #00b894;
+}
+/* menu styles applied here */
+nav .menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+/* main section starts here */
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+/* section style starts here */
+section{
+
+}
+section h3{
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 3;
+    text-shadow: 1px 1px 2px black;
+}
+section h1{
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 3;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+    margin: 30px 0px 20px 0px;
+}
+section h4{
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 3;
+    text-shadow: 1px 2px 2px black;
+    margin-bottom: 25px;
+}
+section a{
+    padding: 5px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    outline: none;
+    margin: 10px;
+    transition: all .5s ease;
+}
+section .btn1{
+    background: #fff;
+    color: black;
+}
+section .btn1:hover{
+    background: #00b894;
+    color: #fff;
+}
+section .btn2{
+    background: #00b894;
+    color: #fff;
+}
+section .btn2:hover{
+    background: #fff;
+    color: black;
+}
+/* transition property shows here */
+.change_content::after{
+    content: '';
+    animation: changetext  10s infinite linear;
+    color: #00b894;
+}
+@keyframes changetext{
+    0%{content: "RAJASTHAN";}
+    10%{content: "DELHI";}
+    20%{content: "DARJEELING";}
+    30%{content: "JAMMU & KASHMIR";}
+    40%{content: "UTTAR PRADESH";}
+    50%{content: "AGRA";}
+    60%{content: "PUNJAB";}
+    70%{content: "MADHYA PRADESH";}
+    80%{content: "UTTRAKHAND";}
+    90%{content: "GOA";}
+    100%{content: "ASSAM";}
+}
