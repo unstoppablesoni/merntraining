@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+#navsection{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to top, white 80%, #c3f5ff 20%);
+}
+.logo {
+    width: 40%;
+    color: #fff;
+    background-image: linear-gradient(#8d98e3 40%, #854fee 60%) ;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+.logo h1{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    animation: aagepiche 2s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes aagepiche{
+    from{padding-left: 40px;}
+    to{padding-right: 40px;}
+}
+nav {
+    width: 60%;    
+    justify-content: space-around;
+    display: flex;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: 17px;
+    position: relative;
+}
+nav a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    top: 110%;
+    height: 2px;
+    left: 0;
+    border-bottom: 2px solid black;
+    transition: 0.3s linear;
+}
+nav a:hover::before{
+width: 100%;
+}
+#home{
+    color: white;
+    background-image: linear-gradient(#8d98e3 , #854fee );
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 10px;
+}
+
+main{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightside img{
+    height: 300px;
+    width: 400px;
+    border-radius: 30% 70% 57% 43% / 36% 20% 80% 64% ;
+    background-color: #e8fbff;
+}
+.leftside{
+    width: 500px;
+    border-radius: 30% 70% 57% 43% / 36% 20% 80% 64% ;
+    background-color: #e8fbff;
+    text-transform: uppercase;
+}
+.leftside h3{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.leftside h1{
+    font-size: 40px;
+    margin-top: 20px;
+    word-spacing: 5px;
+}
+.leftside h2{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 20px;
+    word-spacing: 5px;
+}
+.leftside .btn1{
+    border-radius: 5px;
+    border: double 2px solid transparent;
+    background-image: linear-gradient(to right,#4458dc 0%, #854fee 100%);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 0 10px 30px rgba(118, 85, 225, .3);
+}
+.leftside .btn2{
+    border-radius: 5px;
+    border:  2px solid #4458dc;
+    background-color: #fff;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    color: #222;
+    text-decoration: none;
+    margin-right: 50px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: none;
+}
