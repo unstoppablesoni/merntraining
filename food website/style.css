@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+#navbar{
+    position: relative;
+    height: 75px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* Logo  */
+.logo{
+    height: 100px;
+    width: 100px;
+}
+/* Logo Img  */
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+.logo img:hover{
+    filter: invert(100%);
+}
+/* Navigation Bar : List Styling  */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    text-decoration: none;
+    padding:  3px 35px;
+    display: flex;
+    border-radius: 20px;
+    color: white;
+    font-weight: bolder;
+    
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 560px;
+}
+#home::before{
+    content: "";
+    background:url('food1.jpg')no-repeat center center/cover ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.88;
+}
+/* Utility Classes  */
+#home .h-primary{
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 2px black;
+    font-size: 32px;
+    padding: 30px;
+    text-align: center;
+    font-family: 'DynaPuff', cursive;
+}
+#home p{
+    color: rgb(2, 2, 2);
+    text-shadow: 2px -1px 3px rgb(255 255 255);
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'DynaPuff', cursive;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 20px;
+    background-color: brown;
+    opacity: 0.8;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    font-size: large;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Services Container  */
+.services-container{
+    margin-top: 87px;
+    height: 100%;
+    width: 100%;
+    background: url('food.jpg')no-repeat center center/cover ;
+}
+.h-primary{
+    font-size: 3.8rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px -1px 3px rgb(0, 0, 0);
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 16px;
+}
+.h-third{
+    font-size: 3.8rem;
+    color: rgb(243, 49, 49);
+    text-shadow: 2px -1px 3px rgb(66, 61, 61);
+    padding: 34px;
+    font-family: 'DynaPuff', cursive;
+}
+.center{
+    text-align: center;
+}
+#services{
+    display: flex;
+    margin: 34px;
+}
+#services .box{
+    color: rgb(2, 2, 2);
+    text-shadow: 2px -1px 3px rgb(250, 250, 250);
+    background-color: rgb(226, 200, 166);
+    border: 2px solid brown;
+    border-radius: 18px;
+    width: 470px;
+    margin: 10px;
+    padding: 10px;
+}
+#services .box img{
+    height: 250px;
+    width: 440px;
+    display: block;
+    margin: auto;
+}
+
+/* Clients Section  */
+
+#client-section{
+    height: 390px;
+    margin-top: -33px;
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('food2.jpg')no-repeat center center/cover ;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clients img{
+    height: 160px;
+    width: 220px;
+}
+.client-item{
+    padding: 10px;
+}
+
+/* Contact section  */
+#contact{
+    position: relative;
+    height: 100%;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('contactus.jpg')no-repeat center center/cover ;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box .form-group {
+    padding: 5px;
+}
+#contact-box label{
+    font-size: 1.8rem;
+}
+/* Footer Section  */
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
